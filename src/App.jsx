@@ -16,7 +16,7 @@ function App() {
       setIsLoading(true);
       setShowResult(false);
       const response = await axios(
-        `http://www.omdbapi.com/?s=${userInput}&apikey=4bad4237`,
+        `https://www.omdbapi.com/?s=${userInput}&apikey=4bad4237`,
       );
       setMovieList(response.data.Search || []);
       console.log(response.data.Search);
